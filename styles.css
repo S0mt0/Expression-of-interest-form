@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 5% 7%;
+}
+
+form {
+  width: 100%;
+  min-height: 100vh;
+  /* background: wheat; */
+  padding-block: 2rem;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+label {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+input {
+  outline: none;
+}
+
+.h-2 {
+  display: flex;
+  background: #006838;
+  height: 45px;
+  align-items: center;
+  padding-left: 7px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.grid-header {
+  display: grid;
+  /* grid-auto-flow: column; */
+  grid-template-columns: 1fr 230px;
+  grid-template-rows: 45px;
+  grid-auto-rows: minmax(45px, auto);
+  grid-template-areas:
+    "fl pp"
+    "fl pp"
+    "fl pp"
+    "fl pp"
+    "ft pp";
+  grid-gap: 5px 15px;
+  margin-bottom: 15px;
+}
+
+.fl {
+  display: flex;
+  grid-area: fl;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.fl h1 {
+  margin-top: 30px;
+}
+
+.ft {
+  grid-area: ft;
+}
+
+.pp {
+  display: grid;
+  flex-flow: column wrap;
+  grid-area: pp;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 30px;
+  border: 2px solid black;
+}
+
+.pp label {
+  margin-top: 19%;
+  cursor: pointer;
+}
+
+.pp input {
+  visibility: collapse;
+}
+.pp span {
+  color: white;
+  background: #006838;
+  display: inline-block;
+  padding: 0 7px;
+  border-radius: 5px;
+}
+/* -------------End of form header-------------- */
+
+.inp-wrapper,
+.child {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  margin-top: 10px;
+  padding-left: 7px;
+}
+
+.inp {
+  background-color: transparent;
+  padding: 10px 10px;
+  width: 80%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.lb {
+  text-align: center;
+  max-width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lb span {
+  margin-left: 5%;
+  font-size: 18px;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: minmax(75px, auto);
+  grid-auto-rows: minmax(75px, auto);
+  grid-gap: 12px;
+  grid-auto-flow: column;
+}
+
+.child {
+  height: 100%;
+  margin-top: 0;
+}
+
+.moc input {
+  width: 40%;
+}
+
+.ms {
+  grid-row: span 2;
+}
+
+.sx {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  gap: 15px;
+}
+
+.dp {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  gap: 5px;
+}
+
+.dp input {
+  padding-left: 5px;
+}
+
+.dp input {
+  width: 139px;
+  height: 45px;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+.ms {
+  display: flex;
+}
+
+.ms p {
+  flex: 30%;
+  margin: 3% 5%;
+  font-size: 20px;
+}
+
+.ms-grid {
+  display: grid;
+  grid-template-rows: 80px 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  flex: 60%;
+}
+
+.contact {
+  margin-block: 15px;
+  grid-auto-flow: column;
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  grid-template-rows: 50px 50px;
+  gap: 10px;
+}
+
+.tel {
+  grid-row: span 2;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+.tel input {
+  width: 65%;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+}
+/* ----------------End of personal Information----------------- */
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.child1,
+.child2 {
+  flex: 50%;
+}
+
+.child1 input {
+  width: 80%;
+}
+
+.taller {
+  height: 70px;
+}
+
+.flex2 {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-1 {
+  flex: 70%;
+  display: flex;
+  padding-right: 5px;
+  gap: 2rem;
+}
+
+.flex-2 {
+  flex: 30%;
+}
+
+.flex-2 input {
+  width: 60px;
+  font-size: 20px;
+  padding-left: 5px;
+  border: none;
+}
+/* ---------------end of address information---------------- */
+
+.emp {
+  margin-top: 10px;
+}
+.inp2 {
+  width: 50%;
+}
+/* ----------------employment section--------------- */
+
+.grid2 {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 40% 25%;
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+
+.flex-child {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.flex-child p {
+  margin-left: 30%;
+}
+
+.c {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+.wide {
+  width: 90%;
+  height: 45px;
+  border: 2px solid black;
+  padding-left: 5px;
+  font-size: 20px;
+}
+
+.loans {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.submit-block {
+  margin-top: 3rem;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn > input {
+  outline: none;
+  background-color: transparent;
+  padding: 12px 20px;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.6s ease-in;
+}
+
+.btn > input:hover {
+  color: white;
+  background-color: #006838;
+  border: none;
+}
+
+@media (max-width: 578px) {
+  form {
+    display: grid;
+  }
+
+  .row {
+    max-width: 100%;
+    display: block;
+  }
+}
